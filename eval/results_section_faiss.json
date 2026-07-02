@@ -1,0 +1,294 @@
+{
+  "config": {
+    "retriever": "faiss",
+    "chunking": "section",
+    "k": 5
+  },
+  "retrieval_accuracy": 100.0,
+  "answer_accuracy": 89.47368421052632,
+  "results": [
+    {
+      "question": "What is the name of the framework proposed for evaluation of Retrieval Augmented Generation pipelines?",
+      "expected_paper": "2309.15217v2_Ragas_Automated_Evaluation_of_Retrieval_Augmented_Generation",
+      "expected_keywords": [
+        "Ragas",
+        "Retrieval Augmented Generation Assessment"
+      ],
+      "generated_answer": "The name of the framework proposed for evaluation of Retrieval Augmented Generation pipelines is Ragas (Retrieval Augmented Generation Assessment) [2, front_matter].",
+      "retrieval_hit": true,
+      "answer_hit": true,
+      "retrieved_papers": [
+        "2309.15217v2_Ragas_Automated_Evaluation_of_Retrieval_Augmented_Generation",
+        "2601.05264v1_Engineering_the_RAG_Stack_A_Comprehensive_Review_of_the_Architecture_and_Trust_F",
+        "2502.00306v2_Riddle_Me_This_Stealthy_Membership_Inference_for_Retrieval-Augmented_Generation"
+      ]
+    },
+    {
+      "question": "In the Ragas paper, what type of language models can be used with retrieval-augmented strategies?",
+      "expected_paper": "2309.15217v2_Ragas_Automated_Evaluation_of_Retrieval_Augmented_Generation",
+      "expected_keywords": [
+        "LLMs",
+        "APIs",
+        "standard LM"
+      ],
+      "generated_answer": "In the Ragas paper, it is suggested that retrieval-augmented strategies can be used in combination with Large Language Models (LLMs) that are only available through APIs [1, front_matter]. Additionally, it is mentioned that simply adding retrieved documents to the input of a standard LM can also work [1, front_matter].",
+      "retrieval_hit": true,
+      "answer_hit": true,
+      "retrieved_papers": [
+        "2309.15217v2_Ragas_Automated_Evaluation_of_Retrieval_Augmented_Generation",
+        "2601.05264v1_Engineering_the_RAG_Stack_A_Comprehensive_Review_of_the_Architecture_and_Trust_F",
+        "2512.24268v1_RAGPart_RAGMask_Retrieval-Stage_Defenses_Against_Corpus_Poisoning_in_Retrieval-A"
+      ]
+    },
+    {
+      "question": "What is the name of the LLM model proposed in the WizardLM paper for following complex instructions?",
+      "expected_paper": "2304.12244v3_WizardLM_Empowering_large_pre-trained_language_models_to_follow_complex_instruct",
+      "expected_keywords": [
+        "WizardLM"
+      ],
+      "generated_answer": "The name of the LLM model proposed in the WizardLM paper for following complex instructions is WizardLM [2, 1 INTRODUCTION] and also mentioned in [2, ABSTRACT] and [4, 5 CONCLUSIONS].",
+      "retrieval_hit": true,
+      "answer_hit": true,
+      "retrieved_papers": [
+        "2306.13549v4_A_Survey_on_Multimodal_Large_Language_Models",
+        "2304.12244v3_WizardLM_Empowering_large_pre-trained_language_models_to_follow_complex_instruct"
+      ]
+    },
+    {
+      "question": "What are the two methods combined in the KD-LoRA paper?",
+      "expected_paper": "2410.20777v1_KD-LoRA_A_Hybrid_Approach_to_Efficient_Fine-Tuning_with_LoRA_and_Knowledge_Disti",
+      "expected_keywords": [
+        "LoRA",
+        "Knowledge Distillation"
+      ],
+      "generated_answer": "The two methods combined in the KD-LoRA paper are LoRA and Knowledge Distillation (KD) [3, 1 Introduction]. LoRA is a method for efficient fine-tuning, and Knowledge Distillation is a method for transferring knowledge from a larger teacher model to a smaller student model [2, 2 Method].",
+      "retrieval_hit": true,
+      "answer_hit": true,
+      "retrieved_papers": [
+        "2410.20777v1_KD-LoRA_A_Hybrid_Approach_to_Efficient_Fine-Tuning_with_LoRA_and_Knowledge_Disti",
+        "2501.19389v4_Federated_Sketching_LoRA_A_Flexible_Framework_for_Heterogeneous_Collaborative_Fi"
+      ]
+    },
+    {
+      "question": "What is the name of the hybrid method proposed for combining LoRA and knowledge distillation?",
+      "expected_paper": "2410.20777v1_KD-LoRA_A_Hybrid_Approach_to_Efficient_Fine-Tuning_with_LoRA_and_Knowledge_Disti",
+      "expected_keywords": [
+        "KD-LoRA"
+      ],
+      "generated_answer": "The name of the hybrid method proposed for combining LoRA and knowledge distillation is KD-LoRA [1, front_matter], [2, Abstract], [4, 2 Method].",
+      "retrieval_hit": true,
+      "answer_hit": true,
+      "retrieved_papers": [
+        "2410.20777v1_KD-LoRA_A_Hybrid_Approach_to_Efficient_Fine-Tuning_with_LoRA_and_Knowledge_Disti",
+        "2501.19389v4_Federated_Sketching_LoRA_A_Flexible_Framework_for_Heterogeneous_Collaborative_Fi"
+      ]
+    },
+    {
+      "question": "What retrieval algorithm is outperformed by Dense Passage Retrieval (DPR)?",
+      "expected_paper": "2508.09534v1_Improving_Dense_Passage_Retrieval_with_Multiple_Positive_Passages",
+      "expected_keywords": [
+        "BM25",
+        "DPR"
+      ],
+      "generated_answer": "Dense Passage Retrieval (DPR) outperforms traditional sparse retrieval algorithms such as BM25 [1, front_matter], [3, 2 Related Work].",
+      "retrieval_hit": true,
+      "answer_hit": true,
+      "retrieved_papers": [
+        "2601.05264v1_Engineering_the_RAG_Stack_A_Comprehensive_Review_of_the_Architecture_and_Trust_F",
+        "2508.09534v1_Improving_Dense_Passage_Retrieval_with_Multiple_Positive_Passages",
+        "2210.15133v1_Retrieval_Oriented_Masking_Pre-training_Language_Model_for_Dense_Passage_Retriev",
+        "2205.02303v1_Analysing_the_Robustness_of_Dual_Encoders_for_Dense_Retrieval_Against_Misspellin",
+        "2205.00970v3_LIDER_An_Efficient_High-dimensional_Learned_Index_for_Large-scale_Dense_Passage_"
+      ]
+    },
+    {
+      "question": "What type of encoder architecture is utilized in Dense Passage Retrieval (DPR)?",
+      "expected_paper": "2508.09534v1_Improving_Dense_Passage_Retrieval_with_Multiple_Positive_Passages",
+      "expected_keywords": [
+        "dual encoder",
+        "architecture"
+      ],
+      "generated_answer": "Dense Passage Retrieval (DPR) utilizes a dual-encoder architecture [1, 2 Related Work], [2, front_matter], [4, ABSTRACT].",
+      "retrieval_hit": true,
+      "answer_hit": true,
+      "retrieved_papers": [
+        "2508.09534v1_Improving_Dense_Passage_Retrieval_with_Multiple_Positive_Passages",
+        "2210.15133v1_Retrieval_Oriented_Masking_Pre-training_Language_Model_for_Dense_Passage_Retriev",
+        "2205.02303v1_Analysing_the_Robustness_of_Dual_Encoders_for_Dense_Retrieval_Against_Misspellin",
+        "2205.00970v3_LIDER_An_Efficient_High-dimensional_Learned_Index_for_Large-scale_Dense_Passage_"
+      ]
+    },
+    {
+      "question": "In the paper on improving dense passage retrieval, what is the effect of associating multiple positive passages with each question during training?",
+      "expected_paper": "2508.09534v1_Improving_Dense_Passage_Retrieval_with_Multiple_Positive_Passages",
+      "expected_keywords": [
+        "multiple positive passages",
+        "retrieval accuracy"
+      ],
+      "generated_answer": "The effect of associating multiple positive passages with each question during training is that it consistently improves retrieval accuracy, even when using a significantly smaller batch size [1, front_matter]. This is because exposing the model to more positive passages helps it learn to distinguish between positive and negative passages under a smaller positive-negative imbalance [4, 1 Introduction].",
+      "retrieval_hit": true,
+      "answer_hit": true,
+      "retrieved_papers": [
+        "2508.09534v1_Improving_Dense_Passage_Retrieval_with_Multiple_Positive_Passages",
+        "2210.15133v1_Retrieval_Oriented_Masking_Pre-training_Language_Model_for_Dense_Passage_Retriev",
+        "2204.07496v4_Improving_Passage_Retrieval_with_Zero-Shot_Question_Generation",
+        "2205.00970v3_LIDER_An_Efficient_High-dimensional_Learned_Index_for_Large-scale_Dense_Passage_"
+      ]
+    },
+    {
+      "question": "In the negative-aware training (NAT) paper on learning from failure, what type of models are used as the core of the agent system?",
+      "expected_paper": "2402.11651v2_Learning_From_Failure_Integrating_Negative_Examples_when_Fine-tuning_Large_Langu",
+      "expected_keywords": [
+        "LLMs",
+        "Large language models"
+      ],
+      "generated_answer": "The models used as the core of the agent system in the negative-aware training (NAT) paper are Large Language Models (LLMs) [4, 2.1].",
+      "retrieval_hit": true,
+      "answer_hit": true,
+      "retrieved_papers": [
+        "2203.08975v2_A_Survey_of_Multi-Agent_Deep_Reinforcement_Learning_with_Communication",
+        "2512.06196v1_ARCANE_A_Multi-Agent_Framework_for_Interpretable_and_Configurable_Alignment",
+        "2402.11651v2_Learning_From_Failure_Integrating_Negative_Examples_when_Fine-tuning_Large_Langu"
+      ]
+    },
+    {
+      "question": "Which LLM is used to generate trajectories in the negative-aware training (NAT) paper on learning from failure?",
+      "expected_paper": "2402.11651v2_Learning_From_Failure_Integrating_Negative_Examples_when_Fine-tuning_Large_Langu",
+      "expected_keywords": [
+        "GPT-4"
+      ],
+      "generated_answer": "The LLaMA-2-7B model is used in the experiments for negative-aware training (NAT) [1, 5.2 Data Quality Matters], [2, 5.2 Data Quality Matters], [3, 5.2 Data Quality Matters], and [5, 5 Analysis].",
+      "retrieval_hit": true,
+      "answer_hit": false,
+      "retrieved_papers": [
+        "2402.11651v2_Learning_From_Failure_Integrating_Negative_Examples_when_Fine-tuning_Large_Langu"
+      ]
+    },
+    {
+      "question": "In the negative-aware training (NAT) paper, what is the proposed method to improve model performance using negative examples?",
+      "expected_paper": "2402.11651v2_Learning_From_Failure_Integrating_Negative_Examples_when_Fine-tuning_Large_Langu",
+      "expected_keywords": [
+        "prefix or suffix",
+        "successful trajectory"
+      ],
+      "generated_answer": "The proposed method is to integrate failed trajectories in fine-tuning agents, which is called Negative-Aware Training (NAT) [1, 5.2]. NAT is a simple and effective method for integrating negative examples, and it outperforms training directly with positive or negative trajectories [2, 5.2]. NAT works by providing a better trade-off between better \"thoughts\" and more action errors [4, 5.2].",
+      "retrieval_hit": true,
+      "answer_hit": false,
+      "retrieved_papers": [
+        "2402.11651v2_Learning_From_Failure_Integrating_Negative_Examples_when_Fine-tuning_Large_Langu"
+      ]
+    },
+    {
+      "question": "In the retrieval oriented masking (ROM) paper, what percentage of masked tokens are stop-words or punctuation?",
+      "expected_paper": "2210.15133v1_Retrieval_Oriented_Masking_Pre-training_Language_Model_for_Dense_Passage_Retriev",
+      "expected_keywords": [
+        "40%"
+      ],
+      "generated_answer": "According to the paper, about 40% of the masked tokens produced by the 15% random masking method are stop-words or punctuation [1, front_matter] and [2, 3.2 Disadvantages of Random Masking].",
+      "retrieval_hit": true,
+      "answer_hit": true,
+      "retrieved_papers": [
+        "2210.15133v1_Retrieval_Oriented_Masking_Pre-training_Language_Model_for_Dense_Passage_Retriev"
+      ]
+    },
+    {
+      "question": "What is the name of the proposed token masking method for dense passage retrieval pretraining?",
+      "expected_paper": "2210.15133v1_Retrieval_Oriented_Masking_Pre-training_Language_Model_for_Dense_Passage_Retriev",
+      "expected_keywords": [
+        "ROM",
+        "retrieval oriented masking"
+      ],
+      "generated_answer": "The proposed token masking method is called Retrieval Oriented Masking (ROM) [1, 1 Introduction] and [2, front_matter].",
+      "retrieval_hit": true,
+      "answer_hit": true,
+      "retrieved_papers": [
+        "2210.15133v1_Retrieval_Oriented_Masking_Pre-training_Language_Model_for_Dense_Passage_Retriev"
+      ]
+    },
+    {
+      "question": "In the retrieval oriented masking (ROM) paper, what is the proportion of random masking used?",
+      "expected_paper": "2210.15133v1_Retrieval_Oriented_Masking_Pre-training_Language_Model_for_Dense_Passage_Retriev",
+      "expected_keywords": [
+        "15%"
+      ],
+      "generated_answer": "The proportion of random masking used is 15% [1, front_matter], [4, front_matter].",
+      "retrieval_hit": true,
+      "answer_hit": true,
+      "retrieved_papers": [
+        "2210.15133v1_Retrieval_Oriented_Masking_Pre-training_Language_Model_for_Dense_Passage_Retriev",
+        "2502.00306v2_Riddle_Me_This_Stealthy_Membership_Inference_for_Retrieval-Augmented_Generation"
+      ]
+    },
+    {
+      "question": "What is the name of the multi-agent framework proposed for interpretable and configurable alignment?",
+      "expected_paper": "2512.06196v1_ARCANE_A_Multi-Agent_Framework_for_Interpretable_and_Configurable_Alignment",
+      "expected_keywords": [
+        "ARCANE"
+      ],
+      "generated_answer": "The name of the multi-agent framework proposed for interpretable and configurable alignment is ARCANE [1, front_matter].",
+      "retrieval_hit": true,
+      "answer_hit": true,
+      "retrieved_papers": [
+        "2502.09053v2_Game_Theory_Meets_Large_Language_Models_A_Systematic_Survey_with_Taxonomy_and_Ne",
+        "2512.06196v1_ARCANE_A_Multi-Agent_Framework_for_Interpretable_and_Configurable_Alignment",
+        "2601.05264v1_Engineering_the_RAG_Stack_A_Comprehensive_Review_of_the_Architecture_and_Trust_F"
+      ]
+    },
+    {
+      "question": "What type of framework is ARCANE, the interpretable alignment system?",
+      "expected_paper": "2512.06196v1_ARCANE_A_Multi-Agent_Framework_for_Interpretable_and_Configurable_Alignment",
+      "expected_keywords": [
+        "Multi-Agent"
+      ],
+      "generated_answer": "ARCANE is a multi-agent framework [1, front_matter] and more specifically, a rubric-based alignment framework [3, 1 Introduction setting. Specifically:].",
+      "retrieval_hit": true,
+      "answer_hit": true,
+      "retrieved_papers": [
+        "2006.07180v1_High-Level_ETL_for_Semantic_Data_Warehouses_--_Full_Version",
+        "2312.10793v3_Demystifying_Instruction_Mixing_for_Fine-tuning_Large_Language_Models",
+        "2512.06196v1_ARCANE_A_Multi-Agent_Framework_for_Interpretable_and_Configurable_Alignment"
+      ]
+    },
+    {
+      "question": "What method does the LoRA-C paper propose for parameter-efficient fine-tuning of CNNs for IoT devices?",
+      "expected_paper": "2410.16954v2_LoRA-C_Parameter-Efficient_Fine-Tuning_of_Robust_CNN_for_IoT_Devices",
+      "expected_keywords": [
+        "LoRA-C"
+      ],
+      "generated_answer": "The LoRA-C paper proposes a method called LoRA-C, which performs low-rank decomposition in convolutional layers to reduce the number of fine-tuning parameters [1, front_matter]. This method adds low-rank decomposition in convolutional layer-wise, rather than kernel-wise, to efficiently fine-tune CNN models [4, 1 INTRODUCTION].",
+      "retrieval_hit": true,
+      "answer_hit": true,
+      "retrieved_papers": [
+        "2410.16954v2_LoRA-C_Parameter-Efficient_Fine-Tuning_of_Robust_CNN_for_IoT_Devices"
+      ]
+    },
+    {
+      "question": "In the LoRA-C paper, what dataset showed a 96.9% accuracy with LoRA-C-ResNet-34?",
+      "expected_paper": "2410.16954v2_LoRA-C_Parameter-Efficient_Fine-Tuning_of_Robust_CNN_for_IoT_Devices",
+      "expected_keywords": [
+        "Icons-50"
+      ],
+      "generated_answer": "The Icons-50 dataset showed a 96.9% accuracy with LoRA-C-ResNet-34 [3, 1 INTRODUCTION].",
+      "retrieval_hit": true,
+      "answer_hit": true,
+      "retrieved_papers": [
+        "2410.16954v2_LoRA-C_Parameter-Efficient_Fine-Tuning_of_Robust_CNN_for_IoT_Devices"
+      ]
+    },
+    {
+      "question": "In the LoRA-C paper, how much can LoRA-C reduce the amount of updated parameters compared to full parameter fine-tuning?",
+      "expected_paper": "2410.16954v2_LoRA-C_Parameter-Efficient_Fine-Tuning_of_Robust_CNN_for_IoT_Devices",
+      "expected_keywords": [
+        "99%"
+      ],
+      "generated_answer": "According to the LoRA-C paper, the proposed LoRA-C can reduce the amount of fine-tuning parameters by up to about 99.35% compared to full parameter fine-tuning [3, 4.2].",
+      "retrieval_hit": true,
+      "answer_hit": true,
+      "retrieved_papers": [
+        "2606.01947v1_Parameter-Efficient_Fine-Tuning_of_Large_Pretrained_Models_for_Instance_Segmenta",
+        "2410.16954v2_LoRA-C_Parameter-Efficient_Fine-Tuning_of_Robust_CNN_for_IoT_Devices",
+        "2602.05988v1_Layer-wise_LoRA_fine-tuning_a_similarity_metric_approach"
+      ]
+    }
+  ]
+}
