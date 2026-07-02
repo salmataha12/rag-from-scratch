@@ -1,0 +1,8 @@
+pdfplumber
+sentence-transformers
+numpy
+faiss-cpu
+groq
+streamlit
+python-dotenv
+arxiv

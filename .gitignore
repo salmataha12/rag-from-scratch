@@ -1,0 +1,7 @@
+venv/
+.env
+__pycache__/
+*.pyc
+data/papers/
+data/extracted/
+store/*.npz
