@@ -32,7 +32,8 @@ PDF corpus (59 arXiv papers)
         │
         ▼
 ┌─────────────────────────────┐
-│  retrieve_numpy.py / retrieve_faiss.py │  Manual cosine similarity vs FAISS IndexFlatIP
+│  retrieve_numpy.py /
+   retrieve_faiss.py             │  Manual cosine similarity vs FAISS IndexFlatIP
 └─────────────────────────────┘
         │
         ▼
