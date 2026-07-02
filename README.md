@@ -199,7 +199,7 @@ Run with `streamlit run app.py`. Features:
 ## Setup
 
 ```powershell
-git clone <repo-url>
+git clone <https://github.com/salmataha12/rag-from-scratch>
 cd rag-from-scratch
 python -m venv venv
 venv\Scripts\Activate.ps1
