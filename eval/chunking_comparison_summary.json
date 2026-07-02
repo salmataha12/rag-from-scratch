@@ -1,0 +1,13 @@
+{
+  "retriever": "faiss",
+  "fixed": {
+    "retrieval_accuracy": 100.0,
+    "answer_accuracy": 84.21052631578947
+  },
+  "section": {
+    "retrieval_accuracy": 100.0,
+    "answer_accuracy": 89.47368421052632
+  },
+  "retrieval_accuracy_delta": 0.0,
+  "answer_accuracy_delta": 5.26315789473685
+}
