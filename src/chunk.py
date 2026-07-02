@@ -27,6 +27,9 @@ os.makedirs(STORE_DIR, exist_ok=True)
 # ---- Config ----
 FIXED_CHUNK_WORDS = 350
 FIXED_OVERLAP_WORDS = 50
+MIN_CHUNK_WORDS = 15  # discard near-empty chunks (headings, captions, index terms)
+                       # that can distort retrieval by scoring deceptively high
+                       # on short/generic queries despite carrying little content
 
 # Common section header names in CS/AI papers, in the order they usually appear.
 # Matched case-insensitively, with or without a leading number (e.g. "2 Related Works").
@@ -144,7 +147,13 @@ def split_into_sections(text: str):
 
 
 def chunk_text_by_words(text: str, chunk_words: int, overlap_words: int):
-    """Split text into overlapping chunks of ~chunk_words words each."""
+    """
+    Split text into overlapping chunks of ~chunk_words words each.
+    Chunks shorter than MIN_CHUNK_WORDS are dropped -- these are usually
+    headings, captions, or index terms with little real content, and can
+    score deceptively high on short/generic queries, crowding out more
+    informative chunks in the retrieved results.
+    """
     words = text.split()
     if not words:
         return []
@@ -153,8 +162,9 @@ def chunk_text_by_words(text: str, chunk_words: int, overlap_words: int):
     start = 0
     while start < len(words):
         end = start + chunk_words
-        chunk = " ".join(words[start:end])
-        chunks.append(chunk)
+        chunk_words_slice = words[start:end]
+        if len(chunk_words_slice) >= MIN_CHUNK_WORDS:
+            chunks.append(" ".join(chunk_words_slice))
         if end >= len(words):
             break
         start = end - overlap_words
